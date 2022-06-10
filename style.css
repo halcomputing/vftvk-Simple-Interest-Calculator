@@ -1,4 +1,34 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white
+}
+
+h1 {
+    color: grey;
+    font-family: verdana
+}
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.calcdiv {
+    padding: 10px 50px
+}
+
+.inputs {
+    position:fixed;
+    left: 200px;
+}
+
+#rate_val {
+    position:fixed;
+    left: 380px;
+}
 
 

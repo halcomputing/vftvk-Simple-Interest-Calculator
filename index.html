@@ -1,16 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
+
+<head>
+    <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+
+<body>
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="calcdiv">
 
-        <button onclick="compute()">Compute</button>
-    </body>
+
+            Amount <input class="inputs" type="number" id="principal" value="0"> 
+            <br /><br />
+
+            Interest Rate <input class="inputs" oninput="updateRate()" type="range" id="rate" min="1" max="20" value="10.50" step=".25"> 
+            <span id="rate_val">
+                10.50%
+            </span>
+            <br /><br />
+
+            No. of Years 
+            <select class="inputs" id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br /><br />
+
+            <button onclick="compute()">Compute Interest</button>
+            <br /><br />
+
+            <span id="result"></span>
+        </div>
+
+        <footer>
+            <br /><br />
+            &#169; This Calculator belongs to Kim
+        </footer>
+    </div>
+</body>
+
 </html>
