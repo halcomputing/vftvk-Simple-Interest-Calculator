@@ -3,13 +3,13 @@ function compute() {
   var rate = parseFloat(document.getElementById('rate').value);
   var years = parseInt(document.getElementById('years').value);
 
+  document.getElementById('principal').focus();
+
   if (isNaN(principal)) {
     alert('Amount must a number');
-    document.getElementById('principal').focus();
     return;
   } else if (principal == 0) {
     alert('Enter a positive number');
-    document.getElementById('principal').focus();
     return;
   }
 
